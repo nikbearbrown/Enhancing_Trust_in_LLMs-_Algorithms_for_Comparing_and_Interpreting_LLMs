@@ -1,7 +1,23 @@
 # Enhancing Trust in LLMs: Algorithms for Comparing and Interpreting LLMs
 
+# Abstract
+
+As Large Language Models (LLMs) become integral to diverse applications, ensuring their transparency, robustness, and efficiency is crucial for fostering trust, reliability, and ethical usage. This survey paper explores the significance of Embedding Space Analysis (ESA), Computational Efficiency (CE), and Sensitivity Analysis (SA) in evaluating LLMs. It provides insights into how these models process, understand, and represent language while optimizing resource utilization. Additionally, the paper highlights the importance of transparency methodologies, including human evaluation and advanced evaluation metrics such as perplexity, NLP-specific measures, zero-shot and few-shot learning, transfer learning, adversarial testing, and fairness and bias evaluation. To translate theoretical approaches into real-world systems, the paper proposes an application that monitors LLM performance in real-time, compares metrics, and dynamically switches between models as needed. This add-on aims to ensure chatbots always use the most appropriate model, maintaining high standards of quality, diversity, safety, and trustworthiness.
+
+# Introduction
+
+The imperative for transparency and robust evaluation of Large Language Models (LLMs) cannot be overstated. As LLMs become integral to various applications, ensuring their transparency is crucial for fostering trust, reliability, and ethical usage. This survey aims to explore the significance of transparency, embedding space analysis (ESA), computational efficiency (CE), and sensitivity analysis (SA) in LLMs, focusing on their impact on understanding model decisions, detecting and mitigating biases, facilitating model improvements, and ensuring compliance and trust.
+
+Embedding Space Analysis (ESA) provides deep insights into how LLMs represent linguistic elements, uncovering the semantic and syntactic relationships encoded within high-dimensional vector spaces (Liu, 2019; Saul & Roweis, 2001). This understanding is crucial for identifying model capabilities, biases, and areas for improvement. Meanwhile, Computational Efficiency (CE) focuses on the operational sustainability of LLMs by assessing memory usage, CPU/GPU utilization, and model size, which are critical for their deployment in various applications (Federico et al., 1995; Hersh et al., 1997).
+
+Sensitivity Analysis (SA) plays an essential role in evaluating LLMs by understanding their responsiveness to slight input variations, ensuring their reliability and robustness (Ingalls, 2008; Zi, 2011). This survey also examines the methodologies, applications, and implications of SA in LLMs, addressing how LLMs respond to minor linguistic variations and identifying vulnerabilities through SA.
+
+Furthermore, this survey delves into advanced evaluation techniques like zero-shot and few-shot learning, transfer learning, adversarial testing, and fairness and bias evaluation. These methods are vital for ensuring that LLMs are not only efficient and robust but also fair and unbiased (Mehrabi et al., 2019; Caton & Haas, 2020).
+
+By integrating theoretical approaches with practical applications, this survey outlines a comprehensive framework for continuous performance monitoring, dynamic model switching, and real-time evaluation of LLMs. This ensures that LLMs maintain high standards of quality, diversity, safety, and trustworthiness in real-world systems (Clarkson & Robinson, 1999; Chen & Beeferman, 2008).
 
 
+=
 # Transparency in Large Language Models (LLMs)
 
 The imperative for transparency in large language models (LLMs) cannot be overstated. As LLMs become integral to various applications, ensuring their transparency is crucial for fostering trust, reliability, and ethical usage. This survey paper aims to explore the significance of transparency in LLMs, focusing on how it impacts understanding model decisions, detecting and mitigating biases, facilitating model improvements, selecting the right models, ensuring compliance and trust, promoting collaborative development, and supporting lifelong learning and adaptation. By addressing these aspects, we seek to answer key research questions: How does transparency influence the effectiveness and ethical deployment of LLMs? What methodologies and frameworks are essential for achieving transparency in LLMs?
@@ -1739,108 +1755,202 @@ Emerging trends in human evaluation of LLMs include the development of standardi
 
 Human evaluation of LLMs is crucial for ensuring transparency, ethical compliance, and user satisfaction. By combining human insights with automated metrics, researchers and developers can achieve a more comprehensive understanding of LLM performance. Future work should prioritize the development of standardized evaluation frameworks and explore their applicability in educational and real-world contexts, contributing to the advancement of AI technologies.
 
-### References
+# Conclusion
 
+In conclusion, transparency, embedding space analysis (ESA), computational efficiency (CE), and sensitivity analysis (SA) are crucial for advancing the development and deployment of Large Language Models (LLMs). Transparency in LLMs is paramount for understanding model decisions, detecting and mitigating biases, facilitating model improvements, selecting appropriate models, ensuring compliance and trust, promoting collaborative development, and supporting lifelong learning and adaptation. Embedding Space Analysis (ESA) offers a detailed view of how LLMs process and understand language, revealing intricate patterns and relationships within embedding spaces, contributing to the development of more sophisticated and fair language models (Liu, 2019; Saul & Roweis, 2001).
 
+Computational Efficiency (CE) assessments focus on the sustainability of LLM operations by examining key performance metrics such as memory usage, CPU/GPU utilization, and model size, which are essential for enhancing the efficiency and scalability of LLMs, particularly in resource-constrained environments (Federico et al., 1995; Hersh et al., 1997). Sensitivity Analysis (SA) is a powerful tool for dissecting the inner workings of LLMs, providing essential insights into their robustness, language understanding, and responsiveness to linguistic features (Ingalls, 2008; Zi, 2011).
 
-- Briggs, R. (2012). Causal modeling semantics for counterfactuals. *Philosophical Studies*, 160(2), 139-166.
-- Galles, D., & Pearl, J. (1998). An axiomatic characterization of causal counterfactuals. *Foundations of Science*, 3(1), 151-182.
-- Höfler, M. (2005). Causal interpretation of counterfactuals in recursive models. *BMC Medical Research Methodology*, 5(1), 1-11.
-- Roese, N. J. (1997). Counterfactual thinking. *Psychological Bulletin*, 121(1), 133-148.
+The proposed framework for continuous performance monitoring and dynamic model switching will enhance the chatbot's ability to deliver high-quality, relevant, and trustworthy responses. By integrating advanced evaluation metrics, verification and validation (V&V) techniques, and user feedback, the system will ensure optimal model performance and adaptability to changing requirements (Clarkson & Robinson, 1999; Chen & Beeferman, 2008).
 
-- Liu, Y. (2019). Latent space cartography: Mapping semantic dimensions within vector space embeddings. *Journal of Artificial Intelligence Research*.
-- Saul, L. K., & Roweis, S. T. (2001). An introduction to locally linear embedding. *IEEE Transactions on Pattern Analysis and Machine Intelligence*.
-- Almeida, M., et al. (2019). A comprehensive survey on word embeddings: History, techniques, and evaluation. *Journal of Artificial Intelligence Research*.
-- Ruder, S., et al. (2017). A survey of cross-lingual word embedding models. *Journal of Artificial Intelligence Research*.
-- Bolukbasi, T., Chang, K. W., Zou, J. Y., Saligrama, V., & Kalai, A. T. (2016). Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. *Advances in Neural Information Processing Systems*.
-- Conneau, A., et al. (2018). What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties. *Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics*.
-- van der Maaten, L., & Hinton, G. (2008). Visualizing data using t-SNE. *Journal of Machine Learning Research*.
-  
+Future research should focus on refining these methodologies, exploring new approaches to embedding space analysis, and developing scalable solutions for optimizing computational efficiency. By addressing these aspects, researchers and developers can contribute to creating more transparent, reliable, and resource-efficient LLMs, ultimately enhancing their applicability and impact across various domains.
 
-- Cheok, M. C., & Parry, G. W. (1998). Evaluating the importance measures in risk-informed regulatory applications. *Reliability Engineering & System Safety*, 60(2), 213-226.
-- Delgado, M., Verdegay, J. L., & Vila, M. A. (2004). On aggregation operators of linguistic labels. *International Journal of Intelligent Systems*, 19(3), 289-308.
-- Rücklé, A., Seiffe, L., Wieting, J., & Gurevych, I. (2017). A comprehensive analysis of neural text degeneration: A case study in question generation. *Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics*.
-- Rozemberczki, B., et al. (2022). Feature selection and Shapley values. *Journal of Machine Learning Research*, 23(1), 1-22.
-- Srivastava, A., & Ghosh, J. (2014). Comparative evaluation of feature selection and classification methods for high-dimensional data. *IEEE Transactions on Knowledge and Data Engineering*, 26(7), 1798-1811.
-- Tan, Z. (2002). Fair transmission cost allocation using cooperative game theory. *IEEE Transactions on Power Systems*, 17(3), 775-781.
+# References
 
-- Gao, Y., et al. (2022). Attention in Attention (AiA) module for improving visual tracking performance. *IEEE Transactions on Neural Networks and Learning Systems*.
-- Ilinykh, N., et al. (2022). Multi-modal transformers: Analyzing cross-attention layers for syntactic, semantic, and visual grounding. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*.
-- Tsotsos, J. K. (1995). The selective tuning model for visual attention. *Artificial Intelligence*, 78(1-2), 507-545.
-- Yang, Z., et al. (2021). Refining self-attention mechanisms in vision transformer models. *Advances in Neural Information Processing Systems (NeurIPS)*.
+Abed Ibrahim, L., & Fekete, I. (2019). What machine learning can tell us about the role of language dominance in the diagnostic accuracy of German LITMUS non-word and sentence repetition tasks. *Frontiers in Psychology*.
 
+Agrawal, G. (2023). Can knowledge graphs reduce hallucinations in LLMs? A survey.
 
-- Cheok, M. C., & Parry, G. W. (1998). Evaluating the importance measures in risk-informed regulatory applications. *Reliability Engineering & System Safety*, 60(2), 213-226.
-- Delgado, M., Verdegay, J. L., & Vila, M. A. (2004). On aggregation operators of linguistic labels. *International Journal of Intelligent Systems*, 19(3), 289-308.
-- Goswami, P. (2014). Feature selection in machine learning. *Journal of Data Mining and Knowledge Discovery*, 8(3), 132-143.
-- Rücklé, A., Seiffe, L., Wieting, J., & Gurevych, I. (2017). A comprehensive analysis of neural text degeneration: A case study in question generation. *Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics*.
-- Srivastava, A., & Ghosh, J. (2014). Comparative evaluation of feature selection and classification methods for high-dimensional data. *IEEE Transactions on Knowledge and Data Engineering*, 26(7), 1798-1811.
-- Delgado, M. (2004). Multicriteria spatial decision-making: GIS and MCE techniques. *International Journal of Geographical Information Science*.
-- Evans, J. (1984). Sensitivity analysis in decision theory. *Management Science*.
-- Ingalls, R. (2008). Sensitivity analysis in simulation studies. *Winter Simulation Conference*.
-- Zi, Z. (2011). Sensitivity analysis in systems biology. *Journal of Theoretical Biology*.
-- Moutinho, L. (1994). Stratlogic: A Data-Driven Strategic Marketing Tool. Journal of Strategic Marketing.
-- Kumar, S. (1997). Data Formats in Layered Manufacturing. International Journal of Manufacturing Research.
-- Rahwan, I. (2007). STRATUM: Heuristic Negotiation Tactics in Automated Negotiations. Journal of Artificial Intelligence Research.
-- Jongman, R. H. G. (2005). Statistical Environmental Stratification Across Europe. Biodiversity and Conservation.
+Almeida, M., et al. (2019). A comprehensive survey on word embeddings: History, techniques, and evaluation. *Journal of Artificial Intelligence Research*.
 
-- Gaussier, E. (2002). Hierarchical generative model for clustering and document categorization. *Journal of Machine Learning Research*.
-- Xu, W. (2018). Integrating prior knowledge into building topic hierarchies. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*.
-- Dorr, B. (1998). Thematic hierarchy for efficient generation from lexical-conceptual structures. *Computational Linguistics*.
-- Ruiz, M. E. (2004). Text categorization using a hierarchical array of neural networks. *Information Processing & Management*.
-- Therani, S. (2005). Knowledge Partitioning in Product Lifecycle Management. *International Journal of Product Lifecycle Management*.
-- Jongman, R. (2005). Statistical Environmental Stratification of Europe. *Journal of Environmental Management*.
-- Gulati, R. (2014). Knowledge Retention in IT Services: A Strategic Perspective. *Journal of Service Research*.
-- Folkens, N. (2004). Evaluating Knowledge Management Systems. *Knowledge Management Review*.
-- 
+An, X. (2023). L-Eval: A framework for standardizing the evaluation of long-context language models.
 
-- Hockney, R. W. (1993). The Science of Computer Benchmarking. Society for Industrial and Applied Mathematics.
-- Arora, S. (2023). JEEBench: A Comprehensive Benchmark for Advanced Reasoning and Knowledge Tasks.
-- Vestal, S. (1990). Benchmarking Language Features with Multiple Sampling Loops and Linear Regression.
+Annett, J. (1985). The principle of transfer of training.
 
-- Therani, S. (2005). Knowledge Partitioning in Product Lifecycle Management. *International Journal of Product Lifecycle Management*.
-- Jongman, R. (2005). Statistical Environmental Stratification of Europe. *Journal of Environmental Management*.
-- Gulati, R. (2014). Knowledge Retention in IT Services: A Strategic Perspective. *Journal of Service Research*.
-- Folkens, N. (2004). Evaluating Knowledge Management Systems. *Knowledge Management Review*.
+Bellamy, R. (2020). AI Fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias.
 
-- Puchert, P. (2023). LLMMaps: A Novel Visualization Technique for Evaluating Large Language Models.
-- Gou, Z. (2023). CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing.
-- Peng, B. (2023). Enhancing Large Language Models with External Knowledge and Automated Feedback.
+Bellegarda, J. (1998). Multi-span statistical language modeling for large vocabulary speech recognition. In *5th International Conference on Spoken Language Processing (ICSLP 1998)*.
 
+Bellegarda, J. (1999). Speech recognition experiments using multi-span statistical language models. In *1999 IEEE International Conference on Acoustics, Speech, and Signal Processing. Proceedings. ICASSP99 (Cat. No.99CH36258)*.
 
-- Ye, H. (2023). Addressing Hallucinations in LLMs: A Comprehensive Review. *Journal of Artificial Intelligence Research*.
-- Lee, J. (2018). Evaluating Hallucinations in Neural Language Models. *Proceedings of the ACL Conference*.
-- Zhou, W. (2020). Detecting Hallucinated Content in Neural Sequence Generation. *IEEE Transactions on Neural Networks and Learning Systems*.
-  
-- Mehrabi, N., et al. (2019). A Survey on Bias and Fairness in Machine Learning.
-- Caton, S., & Haas, C. (2020). Fairness in Machine Learning: A Survey.
-- Corbett-Davies, S., et al. (2018). Algorithmic Decision Making and the Cost of Fairness.
-- Pessach, D., & Shmueli, E. (2022). Algorithmic Fairness.
+Bellegarda, J. (2000). Large vocabulary speech recognition with multispan statistical language models. *IEEE Transactions on Speech and Audio Processing*.
 
-- Wang, Y. (2021). Adversarial GLUE: A Benchmark for Assessing LLM Vulnerabilities.
-- Dinakarrao, S. M. P. (2018). Enhancing Machine Learning Robustness through Adversarial Training.
-- Ford, N. (2019). Corruption Robustness in Image Classifiers: Linking Adversarial and Corruption Robustness.
-- Chen, P.-Y. (2022). Adversarial Robustness in Deep Learning Models: Attacks, Defenses, and Applications.
-- Lei, Y., et al. (2010). Robustness in product design and development. 
-- Wang, A., et al. (2021). Adversarial GLUE: A multi-task benchmark for robustness evaluation of language models.
-- Huang, G. Q., et al. (2007). Robustness and reliability in engineering design.
-- Goel, K., et al. (2021). Robustness Gym: Unifying the NLP evaluation landscape.
-- Granello, D. H. (2001). Using Bloom's Taxonomy to Scaffold Critical Thinking in Graduate Writing. *Counselor Education and Supervision*.
-- Köksal, D. (2018). The Role of Bloom's Taxonomy in Language Assessment. *Journal of Language Teaching and Research*.
-- Kelly, A. V. (2006). Bloom's Taxonomy: A Context-Aware Analysis Scheme. *Educational Psychology Review*.
-- Yusof, Y. M. (2010). Developing a Classification Model for Examination Questions Using Bloom's Taxonomy. *Procedia - Social and Behavioral Sciences*.
-- Turchi, M. (2013). [Title of the referenced work].
-- Manning, C. (2020). [Title of the referenced work].
-- Lee, J. (2021). [Title of the referenced work].
-- - Hajian, S. (2019). Educational strategies of coaching, scaffolding, and reflection in situated learning environments.
-- Kim, S.-W. (2008). Factors affecting the evaluation of learning management systems in e-learning.
-- Annett, J. (1985). The principle of transfer of training.
-- Nguyen, C. V. (2020). Log Expected Empirical Prediction (LEEP) metric for evaluating the transferability of learned representations.
-- An, X. (2023). L-Eval: A Framework for Standardizing the Evaluation of Long-Context Language Models.
-- - Gao, J., Heafield, K. (2013). Efficient Algorithms for Language Modeling Challenges.
-- Chilkuri, M. (2021). The Legendre Memory Unit: Reducing Memory and Computation Demands in Language Modeling.
-- Zhang, T. (2023). Instruction Tuning: Improving Zero-Shot Summarization Capabilities in Large Language Models.
-- - Celikyilmaz, A. (2012). Language-based explanations for model interpretability. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*.
-- Pletat, U. (1992). LLILOG: A knowledge representation system for generating language-based explanations. *Artificial Intelligence*, 58(3), 323-348.
-- Tenney, I., et al. (2020). The Language Interpretability Tool: Extensible, interactive visualizations and analyses for NLP models. *Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations*.
-- Wen, T. H., et al. (2015). Semantically conditioned LSTM-based natural language generation for spoken dialogue systems. *Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing*.
+Bimbot, F. (1993). An alternative scheme for perplexity estimation. *Computer Speech & Language*.
+
+Blagec, K. (2022). A global analysis of metrics used for measuring performance in natural language processing.
+
+Bolukbasi, T., Chang, K. W., Zou, J. Y., Saligrama, V., & Kalai, A. T. (2016). Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. *Advances in Neural Information Processing Systems*.
+
+Box, G. E. P. (2006). Robustness in the strategy of scientific model building.
+
+Briggs, R. (2012). Causal modeling semantics for counterfactuals. *Philosophical Studies*, 160(2), 139-166.
+
+Brown, T. B. (2020). Language models are few-shot learners.
+
+Caton, S., & Haas, C. (2020). Fairness in machine learning: A survey.
+
+Celikyilmaz, A. (2012). Language-based explanations for model interpretability. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*.
+
+Chen, P.-Y. (2022). Adversarial robustness in deep learning models: Attacks, defenses, and applications.
+
+Chen, S., & Beeferman, D. (2008). Evaluation metrics for language models. *Carnegie Mellon University*.
+
+Cheok, M. C., & Parry, G. W. (1998). Evaluating the importance measures in risk-informed regulatory applications. *Reliability Engineering & System Safety*, 60(2), 213-226.
+
+Chilkuri, M. (2021). The Legendre Memory Unit: Reducing memory and computation demands in language modeling.
+
+Clarkson, P., & Robinson, T. (1999). Towards improved language model evaluation measures. In *6th European Conference on Speech Communication and Technology (Eurospeech 1999)*.
+
+Clarkson, P., & Robinson, T. (2001). Improved language modeling through better language model evaluation measures. *Computer Speech & Language*.
+
+Conneau, A., et al. (2018). What you can cram into a single $&!#* vector: Probing sentence embeddings for linguistic properties. *Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics*.
+
+Corbett-Davies, S., et al. (2018). Algorithmic decision making and the cost of fairness.
+
+Delgado, M., Verdegay, J. L., & Vila, M. A. (2004). On aggregation operators of linguistic labels. *International Journal of Intelligent Systems*, 19(3), 289-308.
+
+Demner-Fushman, D. (2019). MetaMap Lite: An evaluation of a new Java implementation of MetaMap.
+
+Dinakarrao, S. M. P. (2018). Enhancing machine learning robustness through adversarial training.
+
+Dorr, B. (1998). Thematic hierarchy for efficient generation from lexical-conceptual structures. *Computational Linguistics*.
+
+Federico, M., Cettolo, M., Brugnara, F., & Antoniol, G. (1995). Language modeling for efficient beam-search. *Computer Speech & Language*.
+
+Folkens, N. (2004). Evaluating knowledge management systems. *Knowledge Management Review*.
+
+Ford, N. (2019). Corruption robustness in image classifiers: Linking adversarial and corruption robustness.
+
+Galles, D., & Pearl, J. (1998). An axiomatic characterization of causal counterfactuals. *Foundations of Science*, 3(1), 151-182.
+
+Gao, J., & Heafield, K. (2013). Efficient algorithms for language modeling challenges.
+
+Gao, Y., et al. (2022). Attention in Attention (AiA) module for improving visual tracking performance. *IEEE Transactions on Neural Networks and Learning Systems*.
+
+Golland, P. (2019). Permutation tests for classification: Towards statistical significance in image-based studies.
+
+Gou, Z. (2023). CRITIC: Large language
+
+ models can self-correct with tool-interactive critiquing.
+
+Goyal, S. (2021). A survey of adversarial defenses and robustness in NLP.
+
+Grosse, K. (2020). On the (statistical) detection of adversarial examples.
+
+Gulati, R. (2014). Knowledge retention in IT services: A strategic perspective. *Journal of Service Research*.
+
+Hersh, W., Campbell, E. M., & Malveau, S. (1997). Assessing the feasibility of large-scale natural language processing in a corpus of ordinary medical records: a lexical analysis. *American Medical Informatics Association Annual Symposium*.
+
+Hersh, W., Campbell, E. M., & Malveau, S. (1997). Assessing the feasibility of large-scale natural language processing in a corpus of ordinary medical records: a lexical analysis. *American Medical Informatics Association Annual Symposium*.
+
+Huang, B. (2010). Analytical robustness assessment for robust design.
+
+Ingalls, R. (2008). Sensitivity analysis in simulation studies. *Winter Simulation Conference*.
+
+Ito, A., Kohda, M., & Ostendorf, M. (1999). A new metric for stochastic language model evaluation. *EUROSPEECH*.
+
+Jiang, W. (2015). Multi-scale metric learning for few-shot learning.
+
+Józefowicz, R., Vinyals, O., Schuster, M., Shazeer, N. M., & Wu, Y. (2016). Exploring the limits of language modeling. *arXiv.org*.
+
+Kim, S.-W. (2008). Factors affecting the evaluation of learning management systems in e-learning.
+
+Kojima, T., Gu, S., Reid, M., Matsuo, Y., & Iwasawa, Y. (2022). Large language models are zero-shot reasoners. *ArXiv*.
+
+Liang, P. (2021). Holistic evaluation of language models.
+
+Liao, Q. (2022). AI transparency in the age of LLMs: A human-centered research roadmap.
+
+Liu, Y. (2019). Latent space cartography: Mapping semantic dimensions within vector space embeddings. *Journal of Artificial Intelligence Research*.
+
+Liu, J., & Takanobu, R. (2021). Robustness testing of language understanding in task-oriented dialog. *Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)*.
+
+Mehrabi, N., et al. (2019). A survey on bias and fairness in machine learning.
+
+Miaschi, A. (2020). What makes my model perplexed? A linguistic investigation on neural language models perplexity.
+
+Mikolov, T., Karafiát, M., Burget, L., Černocký, J., & Khudanpur, S. (2010). Recurrent neural network based language model. In *Interspeech 2010*.
+
+Moiseev, F., Dong, Z., Alfonseca, E., & Jaggi, M. (2022). SKILL: Structured knowledge infusion for large language models. In *Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies*.
+
+Neal, J. (2010). An evaluation methodology for natural language processing systems.
+
+Ntoutsi, E. (2020). Bias in data‐driven artificial intelligence systems—An introductory survey.
+
+O'Shaughnessy, D. (1998). A multispan language modeling framework for large vocabulary speech recognition. *IEEE Transactions on Speech and Audio Processing*.
+
+Peng, B. (2023). Check your facts and try again: Improving large language models with external knowledge and automated feedback.
+
+Peng, C., Yang, X., Chen, A., Smith, K., PourNejatian, N., Costa, A., Martin, C., Flores, M., Zhang, Y., Magoc, T., Lipori, G., Mitchell, D., Ospina, N., Ahmed, M., Hogan, W., Shenkman, E., Guo, Y., & Wu, Y. (2023). A study of generative large language model for medical research and healthcare. *arXiv*.
+
+Pessach, D., & Shmueli, E. (2022). Algorithmic fairness.
+
+Pletat, U. (1992). LLILOG: A knowledge representation system for generating language-based explanations. *Artificial Intelligence*, 58(3), 323-348.
+
+Puchert, P. (2023). LLMMaps: A novel visualization technique for evaluating large language models.
+
+Puri, R. (2020). Zero-shot text classification with generative language models.
+
+Rahwan, I. (2007). STRATUM: Heuristic negotiation tactics in automated negotiations. *Journal of Artificial Intelligence Research*.
+
+Reif, E. (2023). Visualizing linguistic diversity of text datasets synthesized by large language models.
+
+Roese, N. J. (1997). Counterfactual thinking. *Psychological Bulletin*, 121(1), 133-148.
+
+Rozemberczki, B., et al. (2022). Feature selection and Shapley values. *Journal of Machine Learning Research*, 23(1), 1-22.
+
+Rücklé, A., Seiffe, L., Wieting, J., & Gurevych, I. (2017). A comprehensive analysis of neural text degeneration: A case study in question generation. *Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics*.
+
+Saul, L. K., & Roweis, S. T. (2001). An introduction to locally linear embedding. *IEEE Transactions on Pattern Analysis and Machine Intelligence*.
+
+Schwenk, H., & Gauvain, J. (2004). Neural network language models for conversational speech recognition. *Interspeech*.
+
+Srivastava, A., & Ghosh, J. (2014). Comparative evaluation of feature selection and classification methods for high-dimensional data. *IEEE Transactions on Knowledge and Data Engineering*, 26(7), 1798-1811.
+
+Stremmel, J., Hill, B., Hertzberg, J., Murillo, J., Allotey, L., Halperin, E., & Hertzberg, J. (2022). Extend and explain: Interpreting very long language models. *arXiv*.
+
+Sundareswara, R. (2009). Perceptual multistability predicted by search model for Bayesian decisions.
+
+Tan, Z. (2002). Fair transmission cost allocation using cooperative game theory. *IEEE Transactions on Power Systems*, 17(3), 775-781.
+
+Tenney, I., et al. (2020). The language interpretability tool: Extensible, interactive visualizations and analyses for NLP models. *Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations*.
+
+Therani, S. (2005). Knowledge partitioning in product lifecycle management. *International Journal of Product Lifecycle Management*.
+
+Tufis, D. (2006). From word alignment to word senses, via multilingual wordnets. *Comput. Sci. J. Moldova*.
+
+Wang, Y. (2021). Adversarial GLUE: A benchmark for assessing LLM vulnerabilities.
+
+Wang, X. (2023). Measure and improve robustness in NLP models: A survey.
+
+Weng, W.-H., Chung, Y.-A., & Szolovits, P. (2019). Unsupervised clinical language translation. In *Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining*.
+
+Wilson, E., Chen, A. H., Grumbach, K., Wang, F., & Fernandez, A. (2005). Effects of limited English proficiency and physician language on health care comprehension. *Journal of General Internal Medicine*.
+
+Wu, L., Wu, S., Zhang, X., Xiong, D., Chen, S., Zhuang, Z., & Feng, Z. (2022). Learning disentangled semantic representations for zero-shot cross-lingual transfer in multilingual machine reading comprehension. *arXiv*.
+
+Xu, W. (2018). Integrating prior knowledge into building topic hierarchies. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*.
+
+Yang, Z. (2021). Refining self-attention mechanisms in vision transformer models. *Advances in Neural Information Processing Systems (NeurIPS)*.
+
+Ye, H. (2023). Addressing hallucinations in LLMs: A comprehensive review. *Journal of Artificial Intelligence Research*.
+
+Yusof, Y. M. (2010). Developing a classification model for examination questions using Bloom's taxonomy. *Procedia - Social and Behavioral Sciences*.
+
+Zhang, T. (2023). Instruction tuning: Improving zero-shot summarization capabilities in large language models.
+
+Zhong, R., Lee, K., Zhang, Z., & Klein, D. (2021). Adapting language models for zero-shot learning by meta-tuning on dataset and prompt collections. In *Findings of the Association for Computational Linguistics: EMNLP 2021*.
+
+Zhou, W. (2020). Detecting hallucinated content in neural sequence generation. *IEEE Transactions on Neural Networks and Learning Systems*.
+
+Zi, Z. (2011). Sensitivity analysis in systems biology. *Journal of Theoretical Biology*.
